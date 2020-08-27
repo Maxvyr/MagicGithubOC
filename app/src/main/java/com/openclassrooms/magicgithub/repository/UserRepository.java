@@ -7,22 +7,24 @@ import java.util.List;
 
 public class UserRepository {
 
-    private final ApiService apiService; // TODO: A utiliser
+    private final ApiService apiService;
 
     public UserRepository(ApiService apiService) {
         this.apiService = apiService;
     }
 
     public List<User> getUsers() {
-        // TODO: A modifier
-        return null;
+        // recover user from the API services
+        return this.apiService.getUsers();
     }
 
     public void generateRandomUser() {
-        // TODO: A modifier
+        // recover randomUser from the API
+        this.apiService.generateRandomUser();
     }
 
     public void deleteUser(User user) {
-        // TODO: A modifier
+        // delete user from the API service
+        this.apiService.deleteUser(user);
     }
 }
