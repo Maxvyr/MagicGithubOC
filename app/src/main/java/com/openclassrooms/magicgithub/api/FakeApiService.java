@@ -27,13 +27,10 @@ public class FakeApiService implements ApiService {
      */
     @Override
     public void generateRandomUser() {
-        // add a random user
+        // create variable with the new random user
+        // then add random user to the list
         User userRandom = User.random();
-
-        // if user does not exist add them
-        if (!this.users.contains(userRandom)) {
             this.users.add(userRandom);
-        }
     }
 
     /**
