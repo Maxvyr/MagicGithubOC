@@ -15,16 +15,16 @@ public class UserRepository {
 
     public List<User> getUsers() {
         // recover user from the API services
-        return this.apiService.getUsers();
+        return apiService.getUsers();
     }
 
     public void generateRandomUser() {
         // recover randomUser from the API
-        this.apiService.generateRandomUser();
+        apiService.generateRandomUser();
     }
 
     public void deleteUser(User user) {
         // delete user from the API service
-        this.apiService.deleteUser(user);
+        apiService.deleteUser(user);
     }
 }

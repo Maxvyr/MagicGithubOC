@@ -18,7 +18,7 @@ public class FakeApiService implements ApiService {
     @Override
     public List<User> getUsers() {
         // return a new user from the list
-        return this.users;
+        return users;
     }
 
     /**
@@ -30,7 +30,7 @@ public class FakeApiService implements ApiService {
         // create variable with the new random user
         // then add random user to the list
         User userRandom = User.random();
-            this.users.add(userRandom);
+        users.add(userRandom);
     }
 
     /**
@@ -39,6 +39,6 @@ public class FakeApiService implements ApiService {
     @Override
     public void deleteUser(User user) {
         // delete user selected (remove  from the list)
-        this.users.remove(user);
+        users.remove(user);
     }
 }
